@@ -1,3 +1,4 @@
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class CaesarCipher {
@@ -19,6 +20,7 @@ public class CaesarCipher {
 
         if (num_menu == 1) {
             System.out.println("Запускаю режим шифрования документа!");
+            System.out.println("Введите полный адрес до файла с текстом для шифрования:");
         } else if (num_menu == 2) {
             System.out.println("Запускаю функцию расшифровки документа по ключу!");
         } else if (num_menu == 3) {
@@ -29,6 +31,11 @@ public class CaesarCipher {
         } else if(num_menu == 0){
             System.out.println("До скорой встречи!");
         }
+
+
+//        InputStream
+
+
             // Пример вызова метода шифрования:
             // cipher.encrypt("input.txt", "output.txt", 3);
         }
