@@ -1,6 +1,6 @@
-package services;
+package Services;
 
-import utilits.Alphabet;
+import Utilits.Alphabet;
 
 public class Cipher {
     public static char shiftCharacter(char c, int key, char[] alphabet) {

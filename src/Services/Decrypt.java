@@ -1,6 +1,6 @@
-package services;
+package Services;
 
-import static services.Cipher.caesarCipher;
+import static Services.Cipher.caesarCipher;
 
 public class Decrypt {
     public static String decrypt(String text, int key) {
