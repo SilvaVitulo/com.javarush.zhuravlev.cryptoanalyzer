@@ -1,4 +1,4 @@
-package Utilits;
+package utilits;
 
 public class ConsoleMenu {
 
@@ -9,10 +9,11 @@ public class ConsoleMenu {
     public static final String SUCCESS_WRITE = "Запись успешно завершена.";
     public static final String SUCCESS_READ = "Файл успешно прочитан.";
     public static final String READ_FILE_ERROR = "Чтение файла прошло с ошибкой, можно попробовать ещё разок ;)";
-    public static final String WRITE_FILE_ERROR = "Запись файла прошла с ошибкой!";
     public static final String MENU_TEXT_ERROR = "Такой пункт меню отсутствует! Выберите из существующих!";
     public static final String KEY_ERROR = "Введён не допустимый ключ шифрования.";
+    public static final String WRITE_FILE_ERROR = "Запись файла прошла с ошибкой!";
     public static final String FILE_FOUND = "Файл %s найден!\n";
+    public static final String FILE_NOT_FOUND = "Файл %s не найден!\n";
 
     public static void printGreeting() {
         System.out.println("*****************************************");
@@ -21,7 +22,7 @@ public class ConsoleMenu {
     }
 
     public static void makeChoice() {
-        System.out.println("Укажите цифру пункта ниже:");
+        System.out.println("    Укажите цифру пункта ниже:");
         System.out.println("1 - Зашифровать сообщение, используюя шифр Цезаря.");
         System.out.println("2 - Расшифровать сообщение, используюя шифр Цезаря.");
         System.out.println("3 - Закончить работу в программе.");

@@ -1,12 +1,18 @@
-package IO;
+package inputOutput;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static Services.Decrypt.decrypt;
-import static Services.Encrypt.encrypt;
-import static Utilits.ConsoleMenu.*;
+import static services.Decrypt.decrypt;
+import static services.Encrypt.encrypt;
+import static utilits.ConsoleMenu.READ_FILE_ERROR;
+import static utilits.ConsoleMenu.SUCCESS_READ;
+import static utilits.ConsoleMenu.SUCCESS_WRITE;
+import static utilits.ConsoleMenu.WRITE_FILE_ERROR;
+import static utilits.ConsoleMenu.repeatMenu;
 
 public class FileManager {
 
@@ -25,12 +31,12 @@ public class FileManager {
             }
             System.out.println(SUCCESS_READ);
             return stringBuilder.toString();
-        } catch (IOExeption e) {
+        } catch (IOException e) {
             return READ_FILE_ERROR;
         }
     }
 
-    public void writeFile(String content, String filePath) {
+    public static void writeFile(String content, String filePath) {
         try (BufferedWriter writer = Files.newBufferedWriter(Path.of(filePath))) {
             writer.write(content);
             System.out.println(SUCCESS_WRITE);

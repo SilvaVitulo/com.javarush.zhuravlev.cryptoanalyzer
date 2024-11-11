@@ -1,4 +1,4 @@
-package Utilits;
+package utilits;
 
 public class Alphabet {
     public static final char[] ALPHABET_RUS = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з',

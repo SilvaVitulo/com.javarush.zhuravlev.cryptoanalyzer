@@ -1,11 +1,17 @@
-import IO.FileManager;
-
+import inputOutput.FileManager;
 import java.util.Scanner;
 
-import static Utilits.ConsoleMenu.*;
-import static jdk.xml.internal.SecuritySupport.isFileExists;
+import static utilits.ConsoleMenu.ENTER_INPUT_FILE;
+import static utilits.ConsoleMenu.ENTER_KEY;
+import static utilits.ConsoleMenu.ENTER_OUTPUT_FILE;
+import static utilits.ConsoleMenu.MENU_TEXT_ERROR;
+import static utilits.ConsoleMenu.SUCCESS_MESSAGE;
+import static utilits.ConsoleMenu.makeChoice;
+import static utilits.ConsoleMenu.printGreeting;
+import static inputOutput.Validator.isFileExists;
+import static inputOutput.Validator.validateKey;
 
-public class CipherApplicalion {
+public class ConsoleCipherApplication {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         boolean isRunning = true;
